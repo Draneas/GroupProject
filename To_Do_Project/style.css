@@ -2,12 +2,16 @@ body {
  font-family: Arial, sans-serif;
  text-align: center;
 
-background-color: #f0f4f8; 
-color: #333;
+background: linear-gradient(to right, #654ea3, #eaafc8);
+color:#241b3b;
 }
 
 h1 {
- color: #2563eb;
+ color: #241b3b;
+}
+
+h2{
+    color:#241b3b;;
 }
 button {
  padding: 10px 20px;
