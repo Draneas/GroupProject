@@ -77,7 +77,7 @@ list.addEventListener('click', function(event) {
   }
 });
 
-list.addEventListener('dblclick', function(event) 
-{
-  if (event.target.tagName === 'LI'){event.target.remove();}
-});
+//  list.addEventListener('dblclick', function(event)
+//  {
+//      if (event.target.tagName === 'LI'){event.target.remove();}
+//  });
