@@ -1,4 +1,4 @@
-
+const options = ["All", "Completed","Unfinished"]
 
 //  !! Koden baseras på denna HTML !!
 //  <input type="text" id="myInput" placeholder="Lägg till ToDo">
@@ -42,6 +42,10 @@ function newElement() {
 
 }
 
+function filterTask()
+{
+    return 
+}
 
 // Lyssnar på listan för att kunna ta bort närmsta elementet
 document.getElementById("myUL").addEventListener("click", function(event) {
