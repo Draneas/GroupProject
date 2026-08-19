@@ -1,3 +1,13 @@
+function newElement() 
+{
+  const inputValue = document.getElementById("myInput").value;
+  if (inputValue === '') return;
+
+  const task = document.createElement("li");
+  document.getElementById("myUL").appendChild(task);
+  document.getElementById("myInput").value = "";
+}
+
 const list = document.getElementById('myUL');
 list.addEventListener('click', function(event) {
   if (event.target.tagName === 'LI') {
