@@ -1,15 +1,55 @@
 body {
- font-family: Arial, sans-serif;
+font-family: Georgia, serif;
  text-align: center;
+background: linear-gradient(to right, #654ea3, #eaafc8);
+color:#241b3b;
+}
 
-background-color: #f0f4f8; 
-color: #333;
+header {
+    padding-top: 30px;
 }
 
 h1 {
- color: #2563eb;
+    font-family: Georgia, serif;
+ color: #241b3b;
+ font-weight: lighter;
 }
+
+h2 {
+    font-family: Georgia, serif;
+    color:#241b3b;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
 button {
- padding: 10px 20px;
+ padding: 5px 10px;
  font-size: 16px;
+}
+
+footer {
+    font-family: Georgia, serif;
+background: linear-gradient(to right, #eaafc8, #654ea3);
+padding: 1px;
+font-weight: bold;
+font-size: 20px;
+}
+
+label {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #241b3b;
+}
+
+input {
+    font-size: 20px;
+    color:#241b3b;
+}
+
+li{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color:#241b3b;
+    font-style: oblique;
+    padding-bottom: 10px;
 }
