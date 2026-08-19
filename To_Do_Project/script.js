@@ -22,14 +22,47 @@ function newElement() {
     //Kollar så att något är skrivet i fältet
     if (inputValue === '') {
         alert("Du måste ju skriva något!");
+        return; //Avbryter
     } else {
+
+        //Deleteknappen
+        var deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "\u2717";
+        deleteBtn.className = "delete-knapp";
+
+        // Lägg till knappen
+        li.appendChild(deleteBtn);
+
         //Lägg till elementet i listan
         document.getElementById("myUL").appendChild(li);
     }
 
     //Tömmer input
     document.getElementById("myInput").value = "";
+
 }
+
+
+// Lyssnar på listan för att kunna ta bort närmsta elementet
+document.getElementById("myUL").addEventListener("click", function(event) {
+
+    // Kontrollera om det var en delete-knapp som klickades på
+    if (event.target.classList.contains("delete-knapp")) {
+
+        // Hitta närmaste li-element och radera det
+        var listItem = event.target.closest("li");
+
+        // Hämta texten från li-element
+        var text = listItem.firstChild.textContent;
+
+        // Fråga om användaren verkligen vill ta bort
+        if (confirm("Är du säker på att du vill ta bort \"" + text + "\"?")) {
+            listItem.remove();
+        }
+    }
+});
+
+
 const list = document.getElementById('myUL');
 list.addEventListener('click', function(event) {
   if (event.target.tagName === 'LI') {
