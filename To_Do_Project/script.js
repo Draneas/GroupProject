@@ -1,4 +1,7 @@
-const options = ["All", "Completed","Unfinished"]
+const options = ["All", "Completed","Unfinished"];
+const selectElement = document.getElementById("taskOptions");
+
+options.forEach(val => {const option = document.createElement("option"); option.value = val; option.textContent = val; selectElement.appendChild(option);});
 
 //  !! Koden baseras på denna HTML !!
 //  <input type="text" id="myInput" placeholder="Lägg till ToDo">
